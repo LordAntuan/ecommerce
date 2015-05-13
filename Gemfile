@@ -62,9 +62,7 @@ group :development do
 
   #profiling
   gem 'bullet'
-  platforms :ruby do # Only linux
-    gem 'ruby-prof'
-  end
+  gem 'ruby-prof', platforms: :ruby
 
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', '~> 0.4.0'
